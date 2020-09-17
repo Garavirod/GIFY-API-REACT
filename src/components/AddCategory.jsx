@@ -13,7 +13,7 @@ export const AddCategory = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setCategories((c) => [...c, value]);
+    setCategories(c => [value, ...c,]);
     setValue("");
   };
   return (
